@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stocks</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <div id="main">
@@ -32,7 +33,20 @@
         <button id="check-button">Check</button>
         <div id="output"></div>
       </div>
-      <div id="container2"></div>
+      <div id="container2">
+        <div id="analysis">
+          <lottie-player
+            src="https://assets4.lottiefiles.com/packages/lf20_yRrgc4.json"
+            background="transparent"
+            speed="1"
+            style="width: 500px; height: auto"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div id="profit-image"></div>
+        <div id="loss-image"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
