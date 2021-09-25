@@ -7,6 +7,7 @@ const analysisImage = document.querySelector("#analysis");
 const profitImage = document.querySelector("#profit-image");
 const lossImage = document.querySelector("#loss-image");
 const mainDiv = document.querySelector("#main");
+const mySite = document.querySelector("#my-site");
 
 function doCalculation()
 { 
@@ -78,6 +79,7 @@ function changeTheme(light,dark)
     checkButton.style.color = light;
     checkButton.style.border = light;
     mainDiv.style.borderColor = dark;
+    mySite.style.color = dark;
 }
 
 
