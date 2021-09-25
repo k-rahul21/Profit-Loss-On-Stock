@@ -148,9 +148,9 @@ footer > a {
   color: var(--dark-color);
   text-decoration: underline;
 }
-
+/* 
 @media screen and (max-width: 600px) {
   footer {
     margin-top: 25rem;
   }
-}
+} */
