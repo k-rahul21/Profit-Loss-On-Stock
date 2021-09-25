@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-color: #1e3a8a;
+  --light-color: #d7e9f7;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  margin: 5rem 5rem 2rem 5rem;
+}
+
+#main {
+  margin: auto;
+  padding: 5rem;
+  display: flex;
+  max-width: 80vw;
+  align-items: flex-start;
+  border: 4px solid var(--dark-color);
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #main {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #main {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+}
+
+input {
+  border: 1px solid var(--dark-color);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 0;
+  width: 25vw;
+}
+
+@media screen and (max-width: 600px) {
+  input {
+    font-size: 0.8rem;
+  }
+}
+
+#check-button {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+@media screen and (max-width: 600px) {
+  #check-button {
+    font-size: 1rem;
+  }
+}
+
+#check-button:hover {
+  cursor: pointer;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.container {
+  margin: 0 2rem 0 0;
+}
+
+#container1 {
+  flex-basis: 40vw;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  #container1 {
+    padding: 1rem;
+  }
+}
+#container2 {
+  flex-basis: 30vw;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  #container1 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#output {
+  font-weight: bold;
+}
+
+#profit-image {
+  display: none;
+}
+
+#loss-image {
+  display: none;
+}
+
+img {
+  width: 40vw;
+  height: auto;
+}
+
+footer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+footer > a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  text-decoration: underline;
+}
