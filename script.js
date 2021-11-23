@@ -46,9 +46,11 @@ function doCalculation()
 
 function findProfitOrLoss()
 {
-
+    let purchase = Number(currentPrice.value);
+    let quantity = Number(initialPrice.value);
+    let current = Number(quantityOfStock.value);
     let answer = 0;
-    if(currentPrice.value === "" || initialPrice.value === "")
+    if(purchase < 1 || quantity < 1 || current < 1)
     {
         answer = -1;
     } else if(currentPrice.value > initialPrice.value)
